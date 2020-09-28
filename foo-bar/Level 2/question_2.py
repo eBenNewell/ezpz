@@ -14,9 +14,9 @@ def solution(l):
     for v in l:
         # change the values at index, split them at '.' each. 
         d[v] = list(map(int, v.split('.')))
-        # then map
 
     d = sorted(d.items(), key=lambda x: x[1])
+
     return [i[0] for i in d]
 
 print(solution(nums))
