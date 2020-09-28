@@ -40,4 +40,5 @@ def solution(l):
     return [i[0] for i in d]
 
 print("After the function")
+# print the (already in order [correct sequence]) key in each index of key-value store.
 print(solution(nums))
