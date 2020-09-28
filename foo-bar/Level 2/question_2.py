@@ -12,12 +12,9 @@ def solution(l):
     d = dict.fromkeys(l, 0)
 
     for v in l:
-        #
-        # d[v] = list(map(int, v.split('.')))
-        #
-        
-        print(d[v])
-        
+        # change the values at index, split them at '.' each. 
+        d[v] = list(map(int, v.split('.')))
+        # then map
 
     d = sorted(d.items(), key=lambda x: x[1])
     return [i[0] for i in d]
