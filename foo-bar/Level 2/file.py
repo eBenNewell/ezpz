@@ -5,12 +5,20 @@ item_list = []
 dick = {}
 
 for item in goog_list:
-    item_list.append(item.split("."))
-for num in range(101):
-    for i in range(0, len(goog_list) + 1):
+#     item_list.append(item.split("."))
+    for num in range(101):
+        dick[num] = []
+    try:
+        print(item.split(".")[0], item.split(".")[1], item.split(".")[2])
+    except:
         try:
-            dick[num] = item_list[i][1]
+            print(item.split(".")[0], item.split(".")[1])
         except:
-            pass
+            try:
+                print(item.split(".")[0])
+            except:
+                pass
+#     print(item.split(".")[1])
+#     print(item.split(".")[2])
 
-print(dick)
+dick[num].append(item.split(".")[0])

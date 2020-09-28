@@ -2,9 +2,9 @@
 
 a = "1.2.3"
 b = "2.3.4"
-c = "3.4.5"
-d = "0.2.1"
-e = "1.2.2"
+c = "3.11"
+d = "0.2"
+e = "1.2.12"
 nums = [a, b, c, d, e]
 
 def solution(l):
@@ -31,9 +31,11 @@ def solution(l):
     a = d.items()
     print(a)
     print("\n")
+    example = sorted(a)
+    print(example)
     d = sorted(d.items(), key=lambda x: x[1])
 
-    print(d)
+    #print(d)
     # print index 0 here otherwise 1 will be the value and 2 will return tuple index out of rnage
     return [i[0] for i in d]
 
