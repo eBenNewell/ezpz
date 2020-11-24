@@ -15,7 +15,7 @@ def answer(data, n):
     print("The number of times a number has to show up is " + str(n))
     for m in data:
         # Am looking for the m that shows up more than n times.
-        # This is NOT right........YEET... TODO: to remove redundanty code output. heh'; hope you understood. 
+        #
         x = data.count(m) > n
         print(x)
 
